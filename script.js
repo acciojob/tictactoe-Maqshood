@@ -24,8 +24,9 @@ submitBtn.addEventListener("click", () => {
   messageDiv.textContent = `${players[currentPlayer]}, you're up`;
 });
 
-cells.forEach((cell, index) => {
+cells.forEach((cell) => {
   cell.addEventListener("click", () => {
+    const index = parseInt(cell.id) - 1;
     if (cell.textContent || gameOver) return;
 
     cell.textContent = currentPlayer;
