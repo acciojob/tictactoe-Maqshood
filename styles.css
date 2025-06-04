@@ -1,49 +1,25 @@
-/*  your css code here. If applicable */
-.container {
-  text-align: center;
-  margin-top: 30px;
-  font-family: Arial, sans-serif;
-}
+board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 5px;
+      justify-content: center;
+      margin-top: 20px;
+    }
 
-h1 {
-  font-family: 'Brush Script MT', cursive;
-  font-size: 48px;
-}
+    .cell {
+      width: 100px;
+      height: 100px;
+      font-size: 2rem;
+      background-color: lightseagreen;
+      border: 2px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
 
-input {
-  margin: 10px;
-  padding: 10px;
-  font-size: 16px;
-}
-
-button {
-  margin: 20px;
-  padding: 10px 30px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.message {
-  margin: 20px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.board {
-  display: grid;
-  grid-template-columns: repeat(3, 100px);
-  justify-content: center;
-  gap: 5px;
-  margin-top: 20px;
-}
-
-.cell {
-  width: 100px;
-  height: 100px;
-  font-size: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #000;
-  cursor: pointer;
-}
+    .message {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-top: 20px;
+    }
